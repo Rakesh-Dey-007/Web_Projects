@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Image Slider</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="image-thumbnail-carousel">
+        <section class="image-display">
+            <div class="screen"></div>
+        </section>
+        <section class="thumbnail-carousel">
+            <button type="button" class="carousel__btn prev" aria-label="Previous slide">
+                <svg width="16" height="16" fill="currentColor" class="arrow-icon arrow-left-circle" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z" />
+                </svg>
+            </button>
+            <ul class="carousel__slider">
+                <li class="carousel__slide">
+                    <div class="thumbnail">
+                        <img loading="lazy" src="https://img.freepik.com/free-photo/asian-woman-wearing-vietnam-culture-traditional-strawberry-garden-doi-ang-khang-chiang-mai-thailand_335224-755.jpg?t=st=1730429466~exp=1730433066~hmac=e4accdd14da18eb03af8b6fc0719ae410a6ca953c225f1f692951abc61288297&w=740" alt="">
+                    </div>
+                </li>
+                <li class="carousel__slide">
+                    <div class="thumbnail">
+                        <img loading="lazy" src="https://img.freepik.com/free-photo/sky-phenomenon_406225-34.jpg?t=st=1730429618~exp=1730433218~hmac=5e1cfc738b24410355edd9e6e3741b376bafce0845d24824ee91928057e74b73&w=740" alt="">
+                    </div>
+                </li>
+                <li class="carousel__slide">
+                    <div class="thumbnail">
+                        <img loading="lazy" src="https://img.freepik.com/premium-photo/beautiful-sunset-empty-sandy-beach_100656-257.jpg?w=740" alt="">
+                    </div>
+                </li>
+                <li class="carousel__slide">
+                    <div class="thumbnail">
+                        <img loading="lazy" src="https://img.freepik.com/premium-photo/majestic-mountain-peak-glowing-sunset-himalayas_115919-75524.jpg?w=740" alt="">
+                    </div>
+                </li>
+                <li class="carousel__slide">
+                    <div class="thumbnail">
+                        <img loading="lazy" src="https://img.freepik.com/free-photo/mist-tourism-skyline-bamboo-rivers-famous_1417-1148.jpg?t=st=1730430029~exp=1730433629~hmac=5acd398dfba4720fef76e1fad7ae9de430f40fde56c7ce7d210427a02870dcaf&w=740" alt="">
+                    </div>
+                </li>
+                <li class="carousel__slide">
+                    <div class="thumbnail">
+                        <img loading="lazy" src="https://img.freepik.com/free-photo/view-old-tree-lake-with-snow-covered-mountains-cloudy-day_181624-28954.jpg?ga=GA1.1.2137025732.1726569969&semt=ais_siglip" alt="">
+                    </div>
+                </li>
+                <li class="carousel__slide">
+                    <div class="thumbnail">
+                        <img loading="lazy" src="https://img.freepik.com/free-photo/sunrise-vasco-da-gama-bridge-lisbon-portugal_268835-1338.jpg?t=st=1730430297~exp=1730433897~hmac=d2c3aac1f60a88a72bb40257db7937b8f857125b4c1e38b90f401cca0d05d66a&w=740" alt="">
+                    </div>
+                </li>
+                <li class="carousel__slide">
+                    <div class="thumbnail">
+                        <img loading="lazy" src="https://as2.ftcdn.net/v2/jpg/04/18/07/69/1000_F_418076984_UTbIai9NstB3a5WFnNz7Cez7gzNRlXy5.jpg" alt="">
+                    </div>
+                </li>
+                <li class="carousel__slide">
+                    <div class="thumbnail">
+                        <img loading="lazy" src="https://img.freepik.com/free-photo/horizontal-shot-beach-with-person-gliding-down-paramotor-parachute_181624-16575.jpg?t=st=1730430590~exp=1730434190~hmac=4ea001df8a35b848764072df1fa3ed776bceca32f1101ac8fb7a9b70147960b7&w=740" alt="">
+                    </div>
+                </li>
+            </ul>
+            <button type="button" class="carousel__btn next" aria-label="Next slide">
+                <svg width="16" height="16" fill="currentColor" class="arrow-icon arrow-right-circle" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z" />
+                </svg>
+            </button>
+        </section>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
