@@ -37,6 +37,6 @@ This project demonstrates a dynamic image search filter built with HTML, CSS, an
 
 # Owner Logo
 
-![Logo](https://github.com/Rakesh-Dey-007/Web_Projects/blob/main/01.%20Image%20Search%20Filter/Logo.jpg)
+![Logo](https://github.com/Rakesh-Dey-007/Web_Projects/blob/main/01.%20Image%20Search%20Filter/Logo_Crop.jpg)
 
 
