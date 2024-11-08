@@ -21,11 +21,13 @@ This project demonstrates a dynamic image search filter built with HTML, CSS, an
 
 
 ## 🛠 Used Skills
-JavaScript, HTML, CSS ...
 
-<img src="https://cdn.iconscout.com/icon/free/png-512/free-html-logo-icon-download-in-svg-png-gif-file-formats--brand-development-tools-pack-logos-icons-225995.png?f=webp&w=256" alt="HTML" width="50" height="50">
-<img src="https://cdn.iconscout.com/icon/free/png-512/free-css-logo-icon-download-in-svg-png-gif-file-formats--brand-development-tools-pack-logos-icons-226095.png?f=webp&w=256" alt="CSS" width="50" height="50">
-<img src="https://cdn.iconscout.com/icon/free/png-512/free-javascript-logo-icon-download-in-svg-png-gif-file-formats--brand-company-business-brands-pack-logos-icons-2284965.png?f=webp&w=256" alt="JavaScript" width="50" height="50">
+<p align="left">
+  <img src="https://cdn.iconscout.com/icon/free/png-512/free-html-logo-icon-download-in-svg-png-gif-file-formats--brand-development-tools-pack-logos-icons-225995.png?f=webp&w=256" alt="HTML" width="70" height="70">
+  <img src="https://cdn.iconscout.com/icon/free/png-512/free-css-logo-icon-download-in-svg-png-gif-file-formats--brand-development-tools-pack-logos-icons-226095.png?f=webp&w=256" alt="CSS" width="70" height="70">
+  <img src="https://cdn.iconscout.com/icon/free/png-512/free-javascript-logo-icon-download-in-svg-png-gif-file-formats--brand-company-business-brands-pack-logos-icons-2284965.png?f=webp&w=256" alt="JavaScript" width="70" height="70">
+</p>
+
 
 
 ## Authors
