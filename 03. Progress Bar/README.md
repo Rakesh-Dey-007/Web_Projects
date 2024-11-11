@@ -1,11 +1,11 @@
 
 
-# Animated Progress Bar 📊✨
+# Animated Progress Circle 📊✨
 
-This project demonstrates a sleek animated progress bar created with HTML and CSS. The progress bar smoothly fills up to indicate task completion, making it ideal for tracking progress, showing loading times, or visualizing data.
+This project demonstrates a sleek animated progress circle created with HTML and CSS. The progress bar smoothly fills up to indicate task completion, making it ideal for tracking progress, showing loading times, or visualizing data.
 
 
-## Project Preview : Image Hover Effect
+## Project Preview : Animated Progress Circle
 
 ![Result](https://github.com/Rakesh-Dey-007/Web_Projects/blob/main/03.%20Progress%20Bar/Result.png)
 
