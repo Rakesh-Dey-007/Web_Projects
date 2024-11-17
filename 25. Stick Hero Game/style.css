@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Kalam:wght@300;400;700&display=swap');
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    font-family: "Chakra Petch", serif;
+    background-color: #333;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+nav {
+    background-color: #333;
+    width: 100%;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.7rem;
+    font-family: "Chakra Petch", serif;
+    position: absolute;
+    top: 0;
+}
+
+.brand-name {
+    color: #00ffff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-left: 1.5rem;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #00ffff;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+nav ul li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+nav ul li a:hover {
+    color: #00ffff;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#score {
+    position: absolute;
+    top: 70px;
+    right: 30px;
+    font-size: 2em;
+    font-weight: 900;
+}
+
+#introduction {
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    font-weight: 600;
+    font-size: 0.8em;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    transition: opacity 2s;
+}
+
+#restart {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    border-radius: 50%;
+    color: white;
+    background-color: red;
+    border: none;
+    font-weight: 700;
+    font-size: 1.2em;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    display: none;
+    cursor: pointer;
+}
+
+#perfect {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 2s;
+}
