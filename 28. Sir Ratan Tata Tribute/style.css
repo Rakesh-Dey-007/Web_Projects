@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Kalam:wght@300;400;700&display=swap');
+
+body{
+    padding:0px;
+    margin:0px;
+    background-color:#232323;
+    color:#ffe;
+    font-family: "Chakra Petch", serif;
+  }
+  .title{
+    font-size:44px;
+    text-align:center;
+    padding:10px;
+    border:2px solid #999;
+    margin:10px 20px;
+  }
+  h2{
+    font-size:36px;
+    font-family:Cursive;
+    text-align:center;
+  }
+  figure{
+    position:relative;
+  }
+  .image{
+    width:100%;
+    margin:auto;
+    border-radius:5px;
+  }
+  .img-caption{
+    text-align:center;
+    font-size:20px;
+  }
+  .quotes{
+    font-size:28px;
+    display:block;
+    padding:15px;
+    border:3px solid #eee;
+    position:absolute;
+    right:5%;
+    top:25%;
+    width:25%;
+  }
+  
+  .tribute-info{
+    display:flex;
+    padding:20px;
+    flex-flow:row wrap;
+    align-items:center;
+    overflow:hidden;
+  }
+  .year{
+    width:10%;
+    background-color:#eed;
+    color:#222;
+    padding:10px;
+    flex:1 0 auto;
+    height:80px;
+    text-align:center;
+    font-weight:bold;
+    font-size:1.5em;
+  }
+  .info{
+    width:80%;
+    flex:3 1 auto;
+    background-color:rgba(255,255,255,0.05);
+    padding:10px;
+    overflow: hidden;
+    height:80px;
+  }
+  .read-more{
+    text-align:center;
+    font-size:20px;
+    padding:10px;
+    margin-bottom:20px;
+    margin-top:-10px;
+  }
+  .tribute-link{
+    color:#f00;
+    text-decoration:none;
+  }
+  footer{
+    text-align:center;
+  }
+  
+  @media (max-width:768px){
+    .tribute-info{
+      text-align:center;
+    }
+    .year{
+      height:20px;
+      align-self:stretch;
+    }
+    .info{
+      height:auto;
+    }
+    .img-caption{
+    font-size:1em;
+    text-align:justify;
+    }
+    .quotes{
+      position:static;
+      width:100%;
+      font-size:1.2em;
+      padding:5px;
+      margin:15px 0 0 0;
+      border-color:transparent;
+      border-bottom:2px solid #eee; 
+      border-top:2px solid #eee; 
+    }
+    
+  }
