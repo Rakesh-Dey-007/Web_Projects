@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Kalam:wght@300;400;700&display=swap');
+
+
+* {
+    border: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Chakra Petch", serif;
+  }
+
+
+  body {
+      margin: 0;
+      font-family: "Chakra Petch", serif;
+      background-color: #333;
+  }
+
+  nav {
+      background-color: #333;
+      box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: space-between;
+      font-family: "Chakra Petch", serif;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      align-items: center;
+      padding: 0.7rem;
+      flex-wrap: wrap; /* Allow wrapping for responsive design */
+  }
+
+  .brand-name {
+      color: #00ffff;
+      font-size: 1.5rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+      margin-left: 1.5rem;
+      flex: 1; /* Allow brand name to take available space */
+  }
+
+  nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: flex-end;
+      transition: max-height 0.3s ease;
+  }
+
+  nav ul li {
+      margin: 0 1rem;
+  }
+
+  nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      display: inline-block;
+      position: relative;
+      transition: color 0.3s ease;
+  }
+
+  nav ul li a::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      transform: scaleX(0);
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: #00ffff;
+      transform-origin: bottom right;
+      transition: transform 0.25s ease-out;
+  }
+
+  nav ul li a:hover::after {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+  }
+
+  nav ul li a:hover {
+      color: #00ffff;
+  }
+
+  .toggle-button {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+      margin-right: 1.5rem;
+  }
+
+  .toggle-button div {
+      width: 25px;
+      height: 3px;
+      background-color: #fff;
+      margin: 3px 0;
+      transition: all 0.3s ease;
+  }
+
+  @media (max-width: 768px) {
+      nav ul {
+          display: none;
+          flex-direction: column;
+          width: 100%;
+          max-height: 0;
+          overflow: hidden;
+          align-items: flex-start; /* Align items to the start */
+          margin: 0; /* Remove default margin */
+      }
+
+      nav ul.active {
+          display: flex;
+          max-height: 300px;
+          justify-content: center;
+          align-items: center;
+          margin-top: 20px;
+      }
+
+      .toggle-button {
+          display: flex;
+      }
+
+      nav {
+          flex-direction: row; /* Stack items vertically */
+          align-items: flex-start; /* Align items to the start */
+      }
+
+      .brand-name {
+          margin: 0; /* Remove left margin for brand name */
+      }
+  }
+  
+  :root {
+    --hue: 53;
+    --bg: hsl(var(--hue),10%,90%);
+    --fg: hsl(var(--hue),10%,10%);
+    --primary: hsl(var(--hue),90%,50%);
+    --trans-dur: 0.3s;
+    --trans-timing1: cubic-bezier(0.65,0,0.35,1);
+    --trans-timing2: cubic-bezier(0.65,0,0.35,1.35);
+    font-size: calc(14px + (30 - 14) * (100vw - 280px) / (3840 - 280));
+  }
+  
+  body,
+  button,
+  textarea {
+    font: 1em/1.5 "Chakra Petch", serif;
+  }
+  
+  body {
+    background-color: var(--bg);
+    color: var(--fg);
+    display: flex;
+    height: 100vh;
+    transition: background-color var(--trans-dur), color var(--trans-dur);
+  }
+  
+  .idea-form {
+    background-color: black;
+    color: white;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 16.5em;
+    height: 4.5em;
+    transition: background-color var(--trans-dur), color var(--trans-dur), height var(--trans-dur) var(--trans-timing2);
+  }
+  .idea-form, .idea-form__btn, .idea-form__content {
+    border-radius: 1.5em;
+  }
+  .idea-form, .idea-form__btn {
+    position: relative;
+  }
+  .idea-form__btn, .idea-form__textarea {
+    outline: transparent;
+    transition: background-color var(--trans-dur), box-shadow var(--trans-dur), opacity var(--trans-dur) var(--trans-timing1);
+    -webkit-appearance: none;
+    appearance: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .idea-form__btn:disabled, .idea-form__textarea:disabled {
+    cursor: not-allowed;
+    opacity: 0.3;
+  }
+  .idea-form__btn {
+    background-color: black;
+    box-shadow: 0 0 0 0.25em hsla(var(--hue), 90%, 30%, 0);
+    color: white;
+    cursor: pointer;
+    display: flex;
+    margin-inline-start: auto;
+    padding: 0.5em 1em;
+    z-index: 2;
+  }
+  .idea-form__btn--start {
+    background-color: transparent;
+    box-shadow: none;
+    color: currentColor;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.0625em;
+    padding-inline-start: 5.25em;
+    width: 100%;
+    height: 4.5em;
+    text-transform: uppercase;
+    transition: opacity var(--trans-dur) var(--trans-timing1), visibility var(--trans-dur) steps(1, start);
+  }
+  .idea-form__btn:focus-visible {
+    box-shadow: 0 0 0 0.25em hsla(var(--hue), 90%, 30%, 1);
+  }
+  .idea-form__content {
+    opacity: 0;
+    padding: 1.5em 1em 0.75em;
+    padding-inline-start: 5.25em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    transition: opacity var(--trans-dur) var(--trans-timing1), visibility var(--trans-dur) steps(1, end);
+  }
+  .idea-form__fill, .idea-form__icon, .idea-form__label {
+    position: absolute;
+  }
+  .idea-form__fill {
+    background-color: hsl(var(--hue), 90%, 50%);
+    border-radius: 50%;
+    top: 1.75em;
+    left: 2em;
+    width: 1em;
+    height: 1em;
+    transform: translateY(50%) scale(0);
+    transition: transform var(--trans-dur) var(--trans-timing1);
+  }
+  [dir=rtl] .idea-form__fill {
+    right: 2em;
+    left: auto;
+  }
+  .idea-form__btn--start:focus-visible {
+    box-shadow: none;
+  }
+  .idea-form__btn--start:focus-visible + .idea-form__fill, .idea-form__btn--start:hover + .idea-form__fill {
+    transform: translateY(0) scale(1);
+  }
+  .idea-form__icon {
+    color: currentColor;
+    display: block;
+    top: 0.75em;
+    left: 1em;
+    width: 3em;
+    height: 3em;
+    z-index: 1;
+  }
+  [dir=rtl] .idea-form__icon {
+    right: 1em;
+    left: auto;
+  }
+  .idea-form__label {
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+  }
+  .idea-form__textarea {
+    background-color: transparent;
+    color: black;
+    display: block;
+    margin-bottom: 0.75em;
+    resize: none;
+    width: 100%;
+    height: 3em;
+  }
+  .idea-form__textarea::placeholder {
+    color: hsl(var(--hue), 10%, 50%);
+  }
+  .idea-form[data-expanded=true] {
+    background-color: transparent;
+    height: 8.5em;
+    transition-timing-function: steps(1, end), ease, var(--trans-timing2);
+  }
+  .idea-form[data-expanded=true] .idea-form__btn--start {
+    opacity: 0;
+    pointer-events: none;
+    transition-timing-function: var(--trans-timing1), steps(1, end);
+    visibility: hidden;
+  }
+  .idea-form[data-expanded=true] .idea-form__content {
+    opacity: 1;
+    transition-timing-function: var(--trans-timing1), steps(1, start);
+    visibility: visible;
+  }
+  .idea-form[data-expanded=true] .idea-form__fill {
+    transform: translateY(0) scale(32);
+  }
+  
+  /* Dark theme */
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: hsl(var(--hue),10%,10%);
+      --fg: hsl(var(--hue),10%,90%);
+    }
+  
+    .idea-form {
+      background-color: white;
+      color: black;
+    }
+  }

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="brand-name">RD CodeFlair</div>
+        <div class="toggle-button" id="toggle-button">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <ul id="nav-links">
+            <li class="active"><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    
+    <form id="idea" class="idea-form" action="">
+        <svg class="idea-form__icon" viewBox="0 0 32 32" width="32px" height="32px" aria-hidden="true">
+            <g fill="currentcolor">
+                <path
+                    d="M16,2A10,10,0,0,0,6,12a9.19,9.19,0,0,0,3.46,7.62c1,.93,1.54,1.46,1.54,2.38h2c0-1.84-1.11-2.87-2.19-3.86A7.2,7.2,0,0,1,8,12a8,8,0,0,1,16,0,7.2,7.2,0,0,1-2.82,6.14c-1.07,1-2.18,2-2.18,3.86h2c0-.92.53-1.45,1.54-2.39A9.18,9.18,0,0,0,26,12,10,10,0,0,0,16,2Z" />
+                <rect x="11" y="24" width="10" height="2" />
+                <rect x="13" y="28" width="6" height="2" />
+            </g>
+        </svg>
+        <button class="idea-form__btn idea-form__btn--start" type="button" data-toggle>I have an idea</button>
+        <div class="idea-form__fill"></div>
+        <div class="idea-form__content">
+            <label for="my-idea" class="idea-form__label">Idea</label>
+            <textarea id="my-idea" class="idea-form__textarea" placeholder="My idea is…"></textarea>
+            <button class="idea-form__btn" type="submit" disabled>Submit</button>
+        </div>
+    </form>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
