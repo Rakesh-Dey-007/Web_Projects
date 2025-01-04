@@ -5,7 +5,7 @@ A playful and eye-catching 3D robot animation crafted with HTML and CSS. This pr
  
 ## 📸 Project Preview : 3D Robot Swinging ✨
 
-https://github.com/Rakesh-Dey-007/Web_Projects/blob/main/33.%20swinging%20Robot/Result.png
+![Image](https://github.com/Rakesh-Dey-007/Web_Projects/blob/main/33.%20swinging%20Robot/Result.png)
 
 ## 🚀 Features  
 
